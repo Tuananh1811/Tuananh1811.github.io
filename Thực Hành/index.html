@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thực hành dụng khung</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/Css/base.css">
+	<link rel="stylesheet" type="text/css" href="./assets/Css/main.css">
+	<link rel="stylesheet" type="text/css" href="./assets/icon/fontawesome/css/all.min.css">
+</head>
+<body>
+	<!-- làm ra thẻ chứa toàn bộ website -->
+	<div class="app">
+		<header class="header">
+			<div class="grid">
+				<nav class="header__navbar"><!-- đặt tên chuẩn bem(block element modifier) -->
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item  header__navbar-item--separate header__navbar--hover">
+							Vào cửa hàng trên ứng dụng ĐTA- Studio
+							<div class="header__navbar--QRcode">
+								<img src="./assets/img/QR.png" alt="" class="header__img--QR">
+								<div class="header__QR--app">
+									<a href="" title="" class="header__download"><img src="./assets/img/ggplay.png" alt="" class="header__img--download"></a>
+									<a href="" title="" class="header__download"><img src="./assets/img/Appstore.png" alt="" class="header__img--download"></a>
+									
+								</div>
+								
+							</div>
+						</li>
+
+						<li class="header__navbar-item  ">Kết nối 
+							<a href="#" title="" class="header__navbar--icon"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" title="" class="header__navbar--icon"><i class="fab fa-instagram"></i></a>
+
+						</li>
+
+					</ul>
+
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item  header__navbar-item--notifi">
+							<a href="#" class="header__nav-link">
+								<i class="far fa-bell"></i>
+								Thông báo
+							</a>
+							<div class="header__notification">
+								<header class="header__notification--header">
+									<h3>Thông báo mới nhận</h3>
+								</header><!-- /header -->
+								<ul class="notifi--list">
+										<li class="header__notifi--list--iteam  header__notifi--list--iteam--viewed">
+
+											<a href="#" class="header__notifi--list--link" >
+
+												<img src="https://giangduydat.vn/product/thumb120/sony-cyber-shot-dsc-rx1r.jpg" alt="" class="notifi--list--img">
+												<div class="notifi--list--infor">
+													<span class="notifi--list--name">Sony Alpha A6600</span>
+													
+													<span class="notifi--list--description">Sony A6600 là phiên bản nâng cấp của chiếc A6500 vốn là flagship của dòng mirrorless cảm biến APS-C của Sony. Vẫn sở hữu cảm biến ảnh 24.2 MP. </span>
+
+
+												</div>
+											</a>
+										</li>
+										<li class="header__notifi--list--iteam  header__notifi--list--iteam--viewed">
+											<a href="#" class="header__notifi--list--link" >
+												<img src="https://giangduydat.vn/product/thumb120/sony-alpha-a7s-ii-body.jpg" alt="" class="notifi--list--img">
+												<div class="notifi--list--infor">
+													<span class="notifi--list--name">Sony Alpha A7 mark II</span>
+													
+													<span class="notifi--list--description">Máy ảnh α7 II được sử dụng hệ thống lấy nét Fast Hybrid AF System mới nhanh hơn 30% và chuẩn xác hơn 1.5 lần so với người tiền nhiệm của nó.</span>
+
+
+												</div>
+											</a>
+										</li>
+
+										<li class="header__notifi--list--iteam header__notifi--list--iteam--viewed">
+											<a href="#" class="header__notifi--list--link" >
+												<img src="https://giangduydat.vn/product/thumb120/sony-alpha-nex-7-with-18-55mm.jpg" alt="" class="notifi--list--img">
+												<div class="notifi--list--infor">
+													<span class="notifi--list--name">Sony Alpha A6000</span>
+													
+													<span class="notifi--list--description">Với tốc độ xử lý nhanh gấp 3 lần so với các sản phẩm trước đây, bộ xử lý hình ảnh mới BIONZ X™ ghi lại một cách chính xác các kết cấu.</span>
+
+
+												</div>
+											</a>
+										</li>
+
+										<li class="header__notifi--list--iteam">
+											<a href="#" class="header__notifi--list--link" >
+												<img src="https://giangduydat.vn/product/thumb120/sony-alpha-a7r-mark-ii-chinh-hang-.jpg" alt="" class="notifi--list--img">
+												<div class="notifi--list--infor">
+													<span class="notifi--list--name">Sony Alpha A7r Mark II</span>
+													
+													<span class="notifi--list--description">Đây là camera full-frame đầu tiên trên thế giới có độ phân giải cảm biến lên tới 42,4-megapixel cùng với các bộ xử lý hình ảnh BIONZ X để cung cấp ảnh tĩnh độ phân giải cao . </span>
+
+
+												</div>
+											</a>
+										</li>
+								</ul>
+								<div class="header__notification--footer">
+									<a href="#" title="">Xem tất cả</a>
+									
+								</div>
+								
+								
+							</div>
+						</li>
+
+						<li class="header__navbar-item"><a href="#" class="header__nav-link"><i class="far fa-question-circle"></i>Trợ giúp</a></li>
+
+						<li class="header__navbar-item"><a href="#" class="header__nav-link header__nav-link--bold header__navbar-item--separate" onclick="viewForm()">Đăng kí</a></li>
+
+						<li class="header__navbar-item"><a href="#" class="header__nav-link header__nav-link--bold">Đăng nhập</a></li>
+					</ul>
+				</nav>
+				<div class="header-with-search">
+					<div class="header__logo">
+						<img src="assets/Img/logosony.png" class="header__logo-img">
+					
+					</div>
+					<!-- tìm kiếm -->
+					<div class="header_search">
+						<div class="header_search-input-wrap">
+							<input class="header_search-input" type="text" placeholder="Tìm kiếm sản phẩm"></input>
+						</div>
+
+						<div class="header_search-select">
+							<span class="header_search-select-lable">
+								Trong shop
+							</span>
+							<i class="fas fa-angle-down header_search-select-icon"></i>
+							<ul class="header_search-option">
+								<li class="header_search-option-item">
+									<span>Trong shop</span>
+									<i class="fas fa-check"></i>
+								</li>
+							</ul>
+							
+						</div>
+						<button class="header_search-btn">
+							<i class="fas fa-search  header_search-btn-icon"></i>
+							
+						</button>
+
+					</div>
+					<!-- giỏ hàng -->
+					<div class="header_cart">
+						<i class="fas fa-shopping-cart header_cart-icon"></i>
+					</div>
+
+				</div>
+
+			</div>
+			
+		</header><!-- /header -->
+		<div class="container">
+			
+
+		</div><!-- container -->
+
+		<div class="footer">
+			
+		</div>
+		
+	</div>
+	<!-- Modal đăng kí -->
+	<div class="modal">
+		<div class="moda__overlay" onclick="hiddenOverlay()"></div>
+
+		<div class="moda__body" >
+				<!--  Form đăng kí -->
+				<div class="auth-form">
+					<div class="auth-form__container">
+						<div class="auth-form__header">
+						 	<h3 class="auth-form__heading">Đăng ký</h3>
+						 	<span class="auth-form__switch-btn" onclick="chuyenslide()">Đăng nhập</span>
+						</div>
+
+						<div class="auth-form__form">
+							 	<div class="auth-form__group">
+							 		<input class="auth-form__input" type="text" placeholder="Email của bạn"></input>
+							 		
+							 	</div>
+
+							 	<div class="auth-form__group">
+									<input class="auth-form__input" type="password" placeholder="Mật khẩu của bạn"></input>
+							 		
+							 	</div>
+
+							 	<div class="auth-form__group">
+							 		<input class="auth-form__input" type="password" placeholder="Nhập lại mật khẩu"></input>
+							 		
+							 	</div>
+						</div>
+						<div class="auth-form__aside">
+							<p class="auth-form__policy-text">
+								Bằng việc đăng kí, bạn đã đồng ý với tôi về
+								<a href="#"class="auth-form__text-link" >Điều khoản dịch vụ </a>&
+								<a href="#" class="auth-form__text-link ">Chính sách bảo mật</a>
+							</p>
+						</div>
+						<div class="auth-form__control">
+							<button type="" class="btn btn__back" onclick="hiddenOverlay()">Trở lại</button>
+							<button type="" class="btn btn__primary" onclick="thongBao()">Đăng kí</button>
+						</div>
+					</div>
+					<div class="auth-form__socials">
+						<a href="#" title="" class="btn btn-size--s btn--with-icon">
+							<i class="fab fa-facebook-square facebook-icon"></i>
+						Kết nối với Facebook</a>
+						<a href="#" title="" class="btn  btn-size--GG btn--with-icon ">
+							<i class="fab fa-google GG-icon"></i>
+
+						Kết nối với Google</a>
+					</div>	
+				</div>
+
+				<!-- Form đăng nhập -->
+			<!-- <div class="auth-form" >
+					<div class="auth-form__container">
+						<div class="auth-form__header">
+						 	<h3 class="auth-form__heading">Đăng nhập</h3>
+						 	<span class="auth-form__switch-btn">Đăng ký</span>
+						</div>
+
+						<div class="auth-form__form">
+							 	<div class="auth-form__group">
+							 		<input class="auth-form__input" type="text" placeholder="Email của bạn"></input>
+							 		
+							 	</div>
+
+							 	<div class="auth-form__group">
+									<input class="auth-form__input" type="password" placeholder="Mật khẩu của bạn"></input>
+							 		
+							 	</div>
+
+							 
+						</div>
+						<div class="auth-form__aside">
+							<div class="auth-form__help">
+								<a class="auth-form__help-link  auth-form__help-link__color">Quên mật khẩu</a>
+								<span class="auth-form__help-separate"></span>
+								<a class="auth-form__help-link">Cần trợ giúp?</a>
+							</div>
+						</div>
+						<div class="auth-form__control">
+							<button type="" class="btn btn__back" onclick="hiddenOverlay()">Trở lại</button>
+							<button type="" class="btn btn__primary">Đăng kí</button>
+						</div><
+					</div>
+					<div class="auth-form__socials">
+						<a href="#" title="" class="btn btn-size--s btn--with-icon">
+							<i class="fab fa-facebook-square facebook-icon"></i>
+						Đăng nhập với Facebook</a>
+						<a href="#" title="" class="btn  btn-size--GG btn--with-icon ">
+							<i class="fab fa-google GG-icon"></i>
+
+						Đăng nhập với Google</a>
+					</div>	
+				</div> --> 
+			
+		</div>
+	</div>
+	<!-- Kết thúc modal đăng kí -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		function viewForm(){
+			var view= document.getElementsByClassName('modal')[0];
+			view.style.display="block";
+		}
+		function hiddenOverlay(){
+			var hiddenOverlay = document.getElementsByClassName('modal')[0];
+			hiddenOverlay.style.display="none";
+		}
+		function chuyenslide(){
+			var chuyen=document.getElementsByClassName('auth-form')[0];
+			chuyen.style.display = block;
+		}
+		function thongBao(){
+			alert("Chỗ này mình chưa làm :)))");
+		}
+
+	</script>
+
+
+</body>
+</html>
