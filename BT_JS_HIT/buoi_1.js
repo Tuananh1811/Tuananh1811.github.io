@@ -1,4 +1,4 @@
-function reset(){
+/*function reset(){
 	document.getElementById("ptBac2").reset();
 }
 function result(){
@@ -120,9 +120,59 @@ function checkex3() {
     }
 }
 
+*/
+// ______________________________ 
+function reset() {
+    document.getElementById("ptb2").reset();
+    document.getElementById("showresult").reset();
+}
+
+function result() {
+    var x1, x2, a, b, c, delta;
+    var result = document.getElementById("showresult");
+    a = parseFloat(document.getElementById("heso_a").value);
+    b = parseFloat(document.getElementById("heso_b").value);
+    c = parseFloat(document.getElementById("heso_c").value);
+    delta = (b * b - 4 * a * c);
+
+    if (a != 0) {
+
+        if (delta > 0) {
+            x1 = (-b + Math.sqrt(delta)) / 2;
+            x2 = (-b - Math.sqrt(delta)) / 2;
+            result.innerHTML = "X1= " + x1 + " X2= " + x2;
+
+        } else if (delta == 0) {
+            x1 = -b / (2 * a);
+            result.innerHTML = "nghiệm kép x1=x2= " + x1;
+        } else {
+            result.innerHTML = "Phương trình vô nghiệm chứ sao";
+        }
+    }
+}
+
+function SUM() {
+    var giovao = parseInt(document.getElementById("giovao").value);
+    console.log(giovao);
+    var giora = document.getElementById("giora").value;
+    console.log(giora);
+    var giagio = parseInt(document.getElementById("giagio").value);
+    console.log(giagio);
+    var binhnuoc = parseInt(document.getElementById("binhnuoc").value);
+    console.log(binhnuoc);
+    var dgbinhnuoc = parseInt(document.getElementById("dgbinhnuoc").value);
+    console.log(dgbinhnuoc);
+
+
+    var tongphi = document.getElementById("tongtiensan");
+    var tienthuesanbong = (giora - giovao) * giagio;
+    var tiennuoc = binhnuoc * dgbinhnuoc;
+    var tongtien = tienthuesanbong + tiennuoc;
+    alert(tongtien);
 
 
 
 
 
 
+}
