@@ -1,0 +1,12 @@
+.block-new-detail span a {
+    text-align: left;
+    color: #444444;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.block-right-img-title {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
