@@ -1,0 +1,103 @@
+.container-product {
+    padding: 0px 66px !important;
+    background-color: #fff;
+}
+
+.filter-product {
+    background-color: var(--primary-color);
+    width: 100% !important;
+    text-align: center;
+}
+
+.row.filter-product {
+    margin: 0 auto;
+}
+
+.filter-product-nav li {
+    border-right: 1px solid #fff !important;
+}
+
+.filter-product-nav li:last-child {
+    border-right: none !important;
+}
+
+
+/* filter */
+
+.related_products {
+    padding: 40px 50px !important;
+}
+
+.filter-category {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-filter-price {
+    background-color: white;
+    list-style: none;
+}
+
+.nav-filter-price .nav-filter-price-item-link {
+    color: black !important;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/* list product */
+
+.list_product {
+    margin-top: 30px !important;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+    .related_products {
+        padding: 10px 10px !important;
+    }
+    .related_products h5 {
+        font-size: 15px;
+    }
+    .container-product {
+        padding: 0px 14px !important;
+        background-color: #fff;
+    }
+    .filter-product-nav li {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .related_products {
+        padding: 10px 10px !important;
+    }
+    .related_products h5 {
+        font-size: 15px;
+    }
+    .container-product {
+        padding: 0px 16px !important;
+        background-color: #fff;
+    }
+    .filter-product-nav li {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .related_products {
+        padding: 0px 0px !important;
+    }
+    .related_products h5 {
+        font-size: 15px;
+    }
+    .container-product {
+        padding: 0px 50px !important;
+        background-color: #fff;
+    }
+    .filter-product {
+        background-color: var(--primary-color);
+        width: 100% !important;
+        text-align: center;
+        font-size: 10px;
+    }
+}

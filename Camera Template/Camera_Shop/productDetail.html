@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/base.css">
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/slick.css">
+    <link rel="stylesheet" href="./Css/product-detail.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+
+
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <div class="container-fluid  no-padding">
+        <div class="header row">
+            <div class="logo col-lg-3 col-md-3 col-sm-6 col-12">
+                <a class="logo_link" href="./trangchu.html">
+                    <img src="./Images/Logo.png" alt="" height="120">
+                </a>
+            </div>
+            <div class="search col-lg-6 col-md-5 col-sm-6 no-margin col-12">
+                <div class="input-group ">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="search" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="btn_search"><i
+                            class="fas fa-search"></i></button>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 d-flex   header-right col-12">
+
+                <div class="col-lg-4 col-md-4 text-center" id="card">
+                    <div class="style_card">
+                        <i class="fas fa-shopping-cart text-white"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                    <div>
+                        <a href="./cart.html"><span class="">Giỏ hàng</span></a>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-md-8 text-center">
+
+                    <i class="fas fa-user text-white"></i>
+                    <a href="./register.html" class="text-white ">Đăng kí |</a>
+                    <a href="./login.html" class="text-white ">Đăng nhập</a>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="row col-lg-12 col-12 no-margin no-padding">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./trangchu.html"> <i class="fas fa-home"></i>Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-camera"></i> Máy ảnh
+                        </a>
+
+                        <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="./product.html">máy ảnh dslr</a></li>
+                            <li><a class="dropdown-item" href="#">Máy ảnh Mirrorless</a></li>
+                            <li><a class="dropdown-item" href="#">Máy Ảnh Compact</a></li>
+                            <li><a class="dropdown-item" href="#">Máy Ảnh Film</a></li>
+                            <li><a class="dropdown-item" href="#">Máy Ảnh Compact</a></li>
+                            <li><a class="dropdown-item" href="#">Máy Ảnh Compact</a></li>
+
+                        </ul>
+
+
+
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-camera-retro"></i> Ống kính
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Ống kính Canon</a></li>
+                            <li><a class="dropdown-item" href="#">Ống kính Sony</a></li>
+                            <li><a class="dropdown-item" href="#">Ống kính Nikon</a></li>
+                            <li><a class="dropdown-item" href="#">Ống kính Film</a></li>
+                            <li><a class="dropdown-item" href="#">Ống kính Fujifilm</a></li>
+                            <li><a class="dropdown-item" href="#">Ống kính Tamron</a></li>
+                            <li><a class="dropdown-item" href="#">Ống kính Sigma</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><i class="far fa-newspaper"></i> Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html"><i class="fas fa-mobile-alt"></i> Liên hệ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="./news.html"><i class="far fa-newspaper"></i> Tin tức</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+    <!-- slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#">
+                    <img src="./Images/slide1.jpg" class="d-block w-100 h-100" alt="...">
+                </a>
+
+            </div>
+            <div class="carousel-item">
+                <a href="#">
+                    <img src="./Images/slide2.jpg" class="d-block w-100" alt="...">
+                </a>
+
+            </div>
+            <div class="carousel-item">
+                <a href="#">
+                    <img src="./Images/slide3.png" class="d-block w-100" alt="...">
+                </a>
+
+            </div>
+            <div class="carousel-item">
+                <a>
+                    <img src="./Images/slide2.jpg" class="d-block w-100" alt="...">
+                </a>
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- danh mục -->
+    <div class="row  no-margin no-padding product_portfolio">
+        <div class="product_portfolio-header row">
+            <div class="product_portfolio-list col-lg-2 col-sm-6 col-12 border rounded ccalcol text-center no-margin">
+                <div class="product_portfolio-icon">
+                    <i class="fas fa-camera-retro text-black-50"></i>
+                </div>
+                <div class="product_portfolio-title">
+                    <a class="product_portfolio-title--link " href="./product.html">Máy ảnh Dslr</a>
+                </div>
+            </div>
+            <div class="product_portfolio-list col-lg-2 col-sm-6 col-12 border rounded ccalcol text-center">
+                <div class="product_portfolio-icon">
+                    <i class="fas fa-camera text-black-50"></i>
+                </div>
+                <div class="product_portfolio-title ">
+                    <a class="product_portfolio-title--link" href="#">Máy ảnh Mirrorless</a>
+                </div>
+            </div>
+            <div class="product_portfolio-list col-lg-2 col-sm-6 col-12 border rounded ccalcol text-center">
+                <div class="product_portfolio-icon">
+                    <i class="fas fa-film text-black-50"></i>
+                </div>
+                <div class="product_portfolio-title">
+                    <a class="product_portfolio-title--link" href="#">Máy ảnh Film</a>
+                </div>
+            </div>
+            <div class="product_portfolio-list col-lg-2 col-sm-6 col-12 border rounded ccalcol text-center">
+                <div class="product_portfolio-icon">
+                    <i class="fas fa-camera-retro text-black-50"></i>
+                </div>
+                <div class="product_portfolio-title">
+                    <a class="product_portfolio-title--link" href="#">Máy ảnh Compact</a>
+                </div>
+            </div>
+            <div class="product_portfolio-list col-lg-2 col-sm-6 col-12 border rounded ccalcol text-center">
+                <div class="product_portfolio-icon">
+                    <i class="fas fa-camera-retro text-black-50"></i>
+                </div>
+                <div class="product_portfolio-title">
+                    <a class="product_portfolio-title--link" href="#">Máy ảnh Dslr</a>
+                </div>
+            </div>
+            <div class="product_portfolio-list col-lg-2 col-sm-6 col-12 border rounded ccalcol text-center">
+                <div class="product_portfolio-icon">
+                    <i class="fas fa-camera-retro text-black-50"></i>
+                </div>
+                <div class="product_portfolio-title">
+                    <a class="product_portfolio-title--link" href="#">Máy ảnh Dslr</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- name product -->
+    <div class="container_product-detail ">
+        <div class="block-head">
+            <div class="head-title">Máy Ảnh Sony CyberShot DSC WX350</div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- detail -->
+    <div class="container_product-detail row no-margin no-padding">
+        <div class="box-product-left col-lg-6 col-md-5 col-sm-4 col-4">
+            <div class="row no-padding">
+
+                <div class="proImg-list col-lg-2 col-md-4 col-sm-3 col-4">
+                    <ul class="">
+                        <li>
+                            <a href="">
+                                <img src="./Images/Detail-Img/d-1.jpg" alt="" class="small-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/Detail-Img/d-2.jpg" alt="" class="small-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/Detail-Img/d-3.jpg" alt="" class="small-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/Detail-Img/d-4.jpg" alt="" class="small-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./Images/Detail-Img/d-5.jpg" alt="" class="small-img">
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="proImg-big col-lg-10 col-md-8 col-sm-9  col-8 no-padding">
+                    <a href="#">
+                        <img src="./Images/Detail-Img/p-d-1.jpg" id="big-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box-product-right col-lg-6 col-md-7 col-sm-8 col-8 ">
+            <div class="box-proInfo">
+                <div class="product-title-recap">Tính năng nổi bật</div>
+                <p>
+                    <a href="#"> <strong>Máy Ảnh Sony CyberShot DSC WX350</strong></a>
+                </p>
+                <div class="box-info-feature">
+                    <p>- Cảm biến Exmor R CMOS loại 1/2,3</p>
+                    <p>- Độ phân giải 18 Megapixel</p>
+                    <p>- Zoom quang học 20x</p>
+                    <p>- Tốc độ chụp liên tiếp 10 ảnh/giây</p>
+                    <p>- Tính năng 360 Sweep Panorama</p>
+                    <p>- ISO 100-12800</p>
+                    <p>- Tốc độ màn trập 4- 1/1600 giây</p>
+                    <p>- Quay phim Full HD</p>
+                    <p>- Kết nối Wi-Fi, NFC</p>
+                    <p>- Phụ kiện máy ảnh đi kèm: Pin, Adapter, Dây đeo, cáp USB, Cataloge</p>
+
+                </div>
+                <hr>
+                <table class="variations-tableInfo">
+                    <tbody>
+                        <tr>
+                            <td class="table-label">Mã sản phẩm</td>
+                            <td class="table-value">A01040082</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Số lượng</td>
+                            <td class="table-value">20 sản phẩm</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Giá bán</td>
+                            <td class="table-value">
+                                <span class="price-sale">5.990.000 đ</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Thương hiệu</td>
+                            <td class="table-value">Sony</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Bảo hành</td>
+                            <td class="table-value">24 tháng</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Xuất xứ</td>
+                            <td class="table-value">Nhật Bản</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Màu sắc</td>
+                            <td class="table-value">
+                                <ul class="list-color clear">
+                                    <li>
+
+                                        <a href="#">
+                                            <img src="./Images/Detail-Img/d-1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="number" class="w-75" value="1" max="5" min="1">
+                            </td>
+                            <td>
+                                <div class="buy-cart-button">
+                                    <a href="#">Mua hàng</a>
+                                </div>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="block-product-content container_product-detail">
+        <div class="block-head">
+            <div class="head-title">chi tiết sản phẩm</div>
+        </div>
+        <div class="block-inner">
+            <div class="tab-container">
+                <div id="contentProduct" class="active">
+                    <div class="view-content">
+                        <div class="view-content-detail">
+                            <div class="view-content-title">
+
+                                <span>
+                                    <strong>
+                                        <a href="#">Máy Ảnh Sony CyberShot DSC WX350</a>
+                                    </strong>
+                                </span>
+                            </div>
+                            <br>
+                            <span>
+                                <strong>Máy Ảnh Sony CyberShot DSC WX350</strong> là chiếc máy ảnh nhỏ gọn được trang bị
+                                với một khả năng đáng kinh ngạc, chiếc máy ảnh đáp ứng được những yêu cầu cho một chuyến
+                                đi du lịch hay đơn giản là những khoảnh khắc hàng ngày.
+                            </span>
+                            <br>
+                            <br>
+                            <div class="content-img">
+                                <span style="font-size: 14px;">
+                                    <img src="./Images/Detail-Img/img-detail-content-d1.jpg" alt="">
+                                </span>
+
+                            </div>
+                            <span>
+                                <strong>Thiết kế</strong>
+                                <br>
+                                <br>
+                                <span>Với thiết kế nhỏ gọn của một chiếc máy ảnh du lịch, nhưng không kém phần tinh tế,
+                                    sắc cạnh. Các nút chức năng được sắp xếp một cách khoa học và dể dàng thao tác cho
+                                    người sử dụng.</span>
+                            <br>
+                            <br>
+                            <strong>Cảm biến Exmor R CMOS 18.2MP</strong>
+                            <br>
+                            <br>
+                            <span>Với cảm biến Exmor R™ CMOS, giờ đây bạn có thể đạt được hình ảnh độ nét cao mà
+                                    không bị nhiễu trong bất kỳ điều kiện ánh sáng nào. Máy ảnh được trang bị bộ xử lý
+                                    hình ảnh mới BIONZ X™ tốc độ cao để mang đến hình ảnh sống động hơn và như thật bằng
+                                    độ phân giải cao.</span>
+                            </span>
+                            <div class="content-img">
+                                <span style="font-size: 14px;">
+                                    <img src="./Images/Detail-Img/img-detail-content-d2.jpg" alt="">
+                                </span>
+
+                            </div>
+                            <span>
+                                <strong>Màn hình</strong>
+                                <br>
+                                <br>
+                                <span>Xem ảnh ngay lập tức trên màn hình LCD 3 inch gắn liền, với năm bước kiểm soát độ
+                                    sáng giúp dể dàng quan sát cũng như xem lại hình ảnh một cách chi tiết và sống động
+                                    về màu sắc.</span>
+                            <br>
+                            <br>
+                            <strong>Ống kính</strong>
+                            <br>
+                            <br>
+                            <span><strong>Máy Ảnh Sony CyberShot DSC WX350</strong> được trang bị ống kính Sony G
+                                    zoom quang học 20x của chiếc WX350 có khẩu độ f/3.5 - 6.5. Ống kính này có độ dài
+                                    tiêu cự 24-1200mm với chế độ 4:3, khả năng zoom khá ấn tượng đối với một chiếc máy
+                                    ảnh nhỏ đến vậy. Tính năng chống rung hình ảnh quang học Optical SteadyShot giúp bạn
+                                    có thể chụp ảnh không bị mờ trong điều kiện chụp thiếu sáng với tốc độ màn trập thấp
+                                    hoặc khi bạn chụp ảnh với mức zoom cao nhất.</span>
+                            </span>
+                            <div class="content-img">
+                                <span style="font-size: 14px;">
+                                    <img src="./Images/Detail-Img/img-detail-content-d3.jpg" alt="">
+                                </span>
+
+                            </div>
+                            <span>
+                                <strong>Kết nối</strong>
+                                <br>
+                                <br>
+                                <span>Việc kết nối với các thiết bị thông minh cực kỳ đơn giản chỉ với một thao tác trên
+                                    máy. Việc chia sẽ hình ảnh cũng như xem lại những hình ảnh hay đoạn phim thật đơn
+                                    giản.</span>
+                            </span>
+                            <div class="content-img">
+                                <span style="font-size: 14px;">
+                                    <img src="./Images/Detail-Img/img-detail-content-d4.jpg" alt="">
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <table border="1" class="table w-100 table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Độ phân giải máy ảnh</th>
+                                    <td>18.2 megapixel</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bộ xử lý máy ảnh</th>
+                                    <td>Bionz X™ đạt tốc độ cao và tái tạo chi tiết hiệu quả</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cảm biến hình ảnh</th>
+                                    <td>Exmor R CMOS - Loại 1/2.3 (7.82mm) - Xấp xỉ 21.1 triệu điểm ảnh</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ống kính</th>
+                                    <td>Sony G 11 yếu tố trong 10 nhóm (bao gồm 5 yếu tố phi cầu)</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Màn hình </th>
+                                    <td>ClearPhoto/TFT LCD</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cân bằng trắng: </th>
+                                    <td>Auto, Daylight, Cloudy, Incandescent, Fluor.: Cool White, Fluor.: Day White, Fluor.: Daylight, Flash, Custom</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Quay phim</th>
+                                    <td>Full HD 60p</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Định dạng quay phim</th>
+                                    <td>AVCHD / AVC MP4 - VGA</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Khối lượng</th>
+                                    <td>164g</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- slick -->
+    <span class="category_title">Máy ảnh</span>
+    <div class="row no-padding no-margin slick">
+
+        <div class="slick-product  row responsive autoplay multiple-items">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-8.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-8.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-8.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-8.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-8.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-8.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-8.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-8.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-8.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <span class="category_title">Ống kính</span>
+    <div class="row no-padding no-margin slick">
+
+        <div class="slick-product  row responsive autoplay multiple-items">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-12.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-12.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-12.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-12.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-12.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-12.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6  style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-12.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-12.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 style_product-slick">
+                <div class="product-img-slick no-padding ">
+                    <img src="./Images/img-12.jpg" class="product-img-slick-style w-50">
+                </div>
+                <div class="product-name-slick">
+                    <a href="#">Fujifilm GFX 50S mark II</a>
+
+                </div>
+                <div class="product-price">96.990.000 đ</div>
+                <div class="product-btn-shopping-slick">
+                    <a href="#">Mua ngay <i class="fas fa-cart-plus"></i></a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="footer row  no-margin  no-padding">
+        <div class="col-lg-2 col-md-3 col-sm-6 no-margin no-padding">
+            <h5 class="fw-bold">Hỗ trợ khách hàng</h5>
+            <ul class="list-menu no-padding">
+                <div class="about">
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách đổi trả</a>
+                    <a href="#">Chính sách thành viên</a>
+                    <a href="#">Chính sách giao hàng</a>
+                </div>
+            </ul>
+
+            <h6 class="fw-bold">Tổng đài chăm sóc khách hàng</h6>
+            <ul class="list-menu no-padding">
+                <div class="about">
+                    <p>- Hotline : 1800 00 30 <br> 0981 58 04 36</p>
+                    <p>- Thời gian hoạt động:
+                        <ul>
+                            <li>Thứ 2 - 6: 8h - 17h</li>
+                            <li>Thứ 7: 8h - 12h30</li>
+                        </ul>
+                    </p>
+                </div>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 no-margin">
+            <h5 class="fw-bold">Về AnhTuan Store</h5>
+            <ul class="list-menu no-padding">
+                <div class="about">
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Tuyển dụng</a>
+                    <a href="#">Liên hệ</a>
+
+                </div>
+            </ul>
+            <p class="fw-bold">Giấy phép bán lẻ tại Hà Nội</p>
+            <ul class="list-menu no-padding">
+                <div class="about">
+                    <p>- Chi nhánh Nguyễn Thị Minh Khai: Số 73/GP-PKT cấp ngày 16/12/2019</p>
+                    <p>- Chi nhánh Hoàng Hoa Thám: Số 32/2020/GPR-PKT cấp ngày 24/08/2020</p>
+                    <p>Chi nhánh Phan Xích Long: Số 186/GPR-PKT cấp ngày 25/12/2019</p>
+                    <p>- Chi nhánh Nguyễn Thị Thập: Số 1603/GP-PKT cấp ngày 21/12/2019</p>
+
+                </div>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-6">
+            <h5 class="fw-bold">Hệ thống cửa hàng</h5>
+            <ul class="list-menu no-padding">
+                <div class="about">
+
+                    <p>- Thời gian hoạt động:<br> Từ thứ 2 đến Chủ Nhật
+                        <ul>
+                            <li>Giờ mở cửa: 8h - 17h</li>
+                            <li>Giờ tư vấn: 6h30 - 22h30</li>
+                        </ul>
+                    </p>
+                </div>
+            </ul>
+            <p class="fw-bold">AnhTuan Store Thanh Xuân</p>
+            <ul class="list-menu no-padding">
+                <div class="about">
+                    <p>- 463 Giải Phóng, Quận Thanh Xuân</p>
+                    <p>-024-3869-2865 - 0966-275-848</p>
+                    <p>091-892-6655 - 0912-999-677 (Zalo, Viber, iMessage)</p>
+                    <p>Hợp đồng: tanhdo18@gmail.com</p>
+
+                </div>
+            </ul>
+            <p class="fw-bold">AnhTuan Store Cầu Giấy</p>
+            <ul class="list-menu no-padding">
+                <div class="about">
+                    <p>số 11 Nguyễn Phong Sắc, Phường Dịch Vọng Hậu</p>
+                    <p>024-3869-2865 - 0966-275-848</p>
+                    <p>091-892-6655 - 0912-999-677 (Zalo, Viber, iMessage)</p>
+                    <p>Hợp đồng: tanhdo18@gmail.com</p>
+
+                </div>
+            </ul>
+            <p class="fw-bold">AnhTuan Store Hồ Chí Minh</p>
+            <ul class="list-menu no-padding">
+                <div class="about">
+                    <p>50/2 Trương Hán Siêu, Quận 1</p>
+                    <p>024-3869-2865 - 0966-275-848</p>
+                    <p>091-892-6655 - 0912-999-677 (Zalo, Viber, iMessage)</p>
+                    <p>Hợp đồng: tanhdo18@gmail.com</p>
+
+                </div>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-7 col-sm-6">
+            <h5 class="branch-title">Anh Tuấn Store</h5>
+            <p>Đại lý cấp 1 phân phối máy ảnh, phụ kiện máy ảnh hàng chính hãng Canon, Nikon, Sony, Fujifilm, Zhiyun, DJI. Các thiết bị âm thanh, điện tử, đồng hồ chính hãng Harman Kardon, JBL, Bose, Marshall, Sony, ...
+            </p>
+            <hr>
+            <h6 class="fw-bold">Đăng kí nhận thông báo từ AnhTuan Store</h6>
+            <br>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Địa chỉ Email nhận tin" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Đăng ký</button>
+            </div>
+            <div class="footer-link row">
+
+                <a href="#" class="text-primary"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-danger"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-danger"><i class="fab fa-instagram"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <!-- <script src="./Js/register.js"></script> -->
+    <script src="./Js/event.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.responsive').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
