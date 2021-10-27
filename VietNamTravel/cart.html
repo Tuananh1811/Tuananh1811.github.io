@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./Css/base.css">
+    <link rel="stylesheet" href="./Css/home.css">
+    <link rel="stylesheet" href="./Css/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+    <title>Cart</title>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+
+        <!-- header-desktop -->
+        <div class="container-fluid row header-top">
+            <div class="col-lg-9 col-md-7 col-sm-6 col-7 row">
+                <div class="col-lg-1 col-md-2 col-sm-3 col-3 no-padding">
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3 col-3 no-padding"><i class="fas fa-envelope"></i></div>
+                <div class="col-lg-3 col-md-5 col-sm-6 col-6 no-padding"><i class="fas fa-phone-square"></i> 0981580436</div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-5 no-margin no-padding">
+                <ul class="row block-nav-right">
+                    <li class="nav-item menu-user">
+                        <a class="nav-link ">Tuấn Anh <i class="fas fa-user"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="./update-profile.html">Sửa thông tin</a></li>
+                            <li><a href="#">Xem các tour đã đặt</a></li>
+                            <li><a href="./index.html">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                </ul>
+            </div>
+        </div>
+        <header class="bg-light block-header-desktop">
+
+            <div class="container-fluid row">
+                <div class="logo col-lg-2 col-md-3 col-3 no-margin no-padding">
+                    <a class="logo_link" href="./trangchu.html">
+                        <img src="./images/logo.jpg" alt="" height="110">
+                    </a>
+                </div>
+
+                <ul class="row col-lg-7 col-md-12 col-sm-12 col-12">
+
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-desktop" style="--bs-scroll-height: 100px;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./trangchu.html">Trang chủ</a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour miền bắc</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour Miền trung</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour miền nam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./news.html">Tin tức</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                </ul>
+                <div class="col-lg-3 no-margin no-padding header-search-tour">
+                    <form class="d-flex ">
+                        <input class="form-control me-2 " type="search" placeholder="Tìm tour" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </header>
+        <!-- header mobile -->
+        <header class=" header-mobile">
+            <div class="container-fluid row">
+                <div class=" col-md-3 col-sm-3 col-3 no-margin no-padding">
+                    <a class="logo_link-mobile" href="./trangchu.html">
+                        <img src="./images/logo.jpg" alt="">
+                    </a>
+                </div>
+                <div class=" col-md-9 col-sm-9 col-9 no-padding no-padding search header-search-tour">
+
+                    <form class="d-flex ">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row no-padding ">
+                <ul class=" col-md-12 col-sm-12 col-12   no-padding ">
+                    <nav class="navbar navbar-expand-lg  ">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler bg-danger " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fas fa-align-left"></i></span>
+                        </button>
+                            <div class="collapse navbar-collapse bg-danger" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-mobile">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./trangchu.html">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour miền bắc</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour Miền trung</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour miền nam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./news.html">Tin tức</a>
+                                    </li>
+
+
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </nav>
+                </ul>
+                <!-- <div class="col-md-6 col-sm-6 col-6 block-user-right-mobile">
+                    <ul class="d-flex">
+
+                        <li class="nav-item menu-user">
+                            <a class="nav-link "><i class="fas fa-user"></i> Đỗ Tuấn Anh </a>
+                            <ul class="sub-menu-mobile">
+                                <li><a href="./register.html">Đăng ký</a></li>
+                                <li><a href="./login.html">Đăng nhập</a></li>
+                                <li><a href="./update-profile.html">Sửa thông tin</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div> -->
+            </div>
+
+
+
+        </header>
+        <!-- ------- điều lệ ---------->
+        <div class="block-regulations">
+            <h4>Giá Tour 3 Ngày: Tới Thăm Và Khám Phá Hạ Long</h4>
+            <h6><i class="fas fa-child"></i> TRẺ EM (cần đọc kỹ để nẵm rõ về tiêu chuẩn của trẻ em):</h6>
+            <p>- Trẻ em từ 1-4 tuổi miễn phí (bố mẹ tự lo mọi chi phí cho trẻ, không chiếm chỗ trên xe). 02 người lớn chỉ được kèm theo 01 trẻ miễn phí, từ trẻ thứ 2 tính 75% giá tour (tiêu chuẩn như trẻ em tính phí).</p>
+            <p>– Trẻ em từ 5-11 tuổi tính 75% giá tour du lịch sóc sơn 2 ngày 1 đêm (ăn suất riêng, chỗ ngồi trên xe riêng nhưng phải ngủ chung giường với bố mẹ). 02 trẻ em tính phí cũng không có tiêu chuẩn giường ngủ riêng.</p>
+            <p>- Trẻ em từ 12 tuổi trở lên tính như người lớn.</p>
+
+        </div>
+        <div class="block-cart">
+            <div class="block-cart-content">
+                <h4>Đặt tour</h4>
+                <div class="block-cart-quantity">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="2">Tên tour</th>
+                                <th scope="col">Giá người lớn/khách</th>
+                                <th scope="col">Ngày khởi hành</th>
+                                <th scope="col">Thời lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Tour 3 Ngày: Tới Thăm Và Khám Phá Hạ Long</td>
+                                <td>3.000.000 VNĐ</td>
+                                <td><input type="date"></td>
+                                <td>3 ngày 2 đêm</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="row container-fluid no-padding no-margin">
+                        <div class="col-lg-6 block-input-group">
+                            <p>Ngày khởi hành</p>
+                            <input type="text" class="block-input-group-time">
+                        </div>
+                        <div class="col-lg-6 block-input-group">
+                            <p>Người lớn (từ 12 tuổi)</p>
+                            <div class="input-group">
+                                <button data-type="minus" data-field="adults" class="input-group-btn btn-minus">
+                                    <span class="tb-icon fa fa-minus"></span>
+                                </button>
+                                <input class="tb-input count" min="0" max="100" type="number" value="0" name="adults"> <button data-type="plus" data-field="adults" class="input-group-btn btn-plus">
+                                    <span class="tb-icon fa fa-plus"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 block-input-group">
+                            <p>Trẻ em (từ 5-11 tuổi)</p>
+                            <div class="input-group">
+                                <button data-type="minus" data-field="adults" class="input-group-btn btn-minus">
+                                    <span class="tb-icon fa fa-minus"></span>
+                                </button>
+                                <input class="tb-input count" min="0" max="100" type="number" value="0" name="adults"> <button data-type="plus" data-field="adults" class="input-group-btn btn-plus">
+                                    <span class="tb-icon fa fa-plus"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 block-input-group">
+                            <p>Trẻ (từ 0-4 tuổi)</p>
+                            <div class="input-group">
+                                <button data-type="minus" data-field="adults" class="input-group-btn btn-minus">
+                                    <span class="tb-icon fa fa-minus"></span>
+                                </button>
+                                <input class="tb-input count" min="0" max="100" type="number" value="0" name="adults"> <button data-type="plus" data-field="adults" class="input-group-btn btn-plus">
+                                    <span class="tb-icon fa fa-plus"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="block-price">
+                    <h5>Tổng cộng</h5>
+                    <p>Tổng: <span>3.000.000 VNĐ</span></p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <footer>
+            <div class="block-footer">
+                <div class="row no-margin footer-widget footer-widget--1">
+                    <div class="col-lg-4 block-footer-detail">
+                        <dl>
+                            <dt>
+                                <h4>ĐĂNG KÝ NHẬN BẢN TIN CỦA CHÚNG TÔI</h4>
+                            </dt>
+                            <dd>Nhận những câu chuyện du lịch mới từ Việt Nam mỗi tháng một lần trong hộp thư đến của bạn</dd>
+                            <dd>
+                                <form action="" method="post" id="mc-embedded-subscribe-form" name="form-newsletter" class="validate form-newsletter" target="_blank" novalidate="novalidate">
+                                    <p><input type="email" value="" name="EMAIL" placeholder=" Your email "></p>
+                                    <p><button name="sign up" class="bg-red-corners">Đăng ký</button></p>
+                                    <span class="error response" id="mce-error-response" style="display:none"></span>
+                                    <span class="error response" id="mce-success-response" style="display:none"></span>
+                                </form>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-3 block-footer-detail-2">
+                        <dl>
+                            <dt>
+                                <h4 data-nid="138">LIÊN HỆ</h4>
+                            </dt>
+                            <dd class="clearfix">
+                                <ul class="no-padding">
+                                    <li><a href="#">1900 2083</a></li>
+                                    <li><a href="#">event@mytour.vn</a></li>
+                                    <li><a href="#">Văn Phòng: Tầng 11 tòa nhà Peak View, 36 Hoàng Cầu, Đống Đa, Hà Nội</a></li>
+                                    <li><a href="#">Showroom: 168 Xã Đàn, Phương Liên, Đống Đa, Hà Nội</a></li>
+
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-4 block-footer-detail ">
+                        <dl>
+                            <dt>
+                                <h4>THEO DÕI CHÚNG TÔI TẠI</h4>
+                            </dt>
+                            <dd>
+                                <ul class="social no-padding">
+                                    <li>
+                                        <a target="_blank" href="https://www.facebook.com/vietnamtourismboard/" title="Facebook" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2020-07/Vietnam%20tourism%20social%20web-2_4.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/vietnamtourismboard/" title="Youtube" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2020-07/Vietnam%20tourism%20social%20web-3_6.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.instagram.com/vietnamtourismboard/" title="Instagram" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2020-07/Vietnam%20tourism%20social%20web-4_4.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.pinterest.com/vietnamtourismboard/" title="Pinterest" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2020-07/Vietnam%20tourism%20social%20web_4.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.tiktok.com/@vietnamtourismboard?lang=en" title="TikTok" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2021-02/Vietnam%20tourism.jpg"></a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="logo" target="_blank" rel="noopener noreferrer"><img src="./images/logo-bw.png" alt=""></a>
+                            </dd>
+                            <dd>
+                                <p class="desc">Chào mừng bạn đến với trang web chính thức của Tổng cục Du lịch Việt Nam. Ghé thăm các trang mạng xã hội của chúng tôi để có thêm cảm hứng du lịch.</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright container">
+                <a href="#" class="btn-backtop">Back to top<img src="/themes/custom/vietnamtourism/images/icon-arrow-up.png" alt=""></a>
+                <div class="row block-rule">
+                    <div class="col-md-9 col-md-push-3">
+                        <ul class="copyright-rule">
+                            <li> © 2016 Trang web chính thức Du lịch Việt Nam</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>
