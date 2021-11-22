@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./Css/base.css">
+    <link rel="stylesheet" href="./Css/home.css">
+    <link rel="stylesheet" href="./Css/tourdetail.css">
+    <link rel="stylesheet" href="./Css/new-detail.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+    <title>Chi tiết tin tức</title>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+        <!-- header-desktop -->
+        <div class="container-fluid row header-top">
+            <div class="col-lg-9 col-md-7 col-sm-6 col-7 row">
+                <div class="col-lg-1 col-md-2 col-sm-3 col-3 no-padding">
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-3 col-3 no-padding"><i class="fas fa-envelope"></i></div>
+                <div class="col-lg-3 col-md-5 col-sm-6 col-6 no-padding"><i class="fas fa-phone-square"></i> 0981580436</div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-5 no-margin no-padding">
+                <ul class="row block-nav-right">
+
+                    <li class="nav-item menu-user">
+                        <a href="./register.html" class="nav-link no-padding">Đăng ký <i class="fas fa-user"></i> </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <header class="bg-light block-header-desktop">
+
+            <div class="container-fluid row">
+                <div class="logo col-lg-2 col-md-3 col-3 no-margin no-padding">
+                    <a class="logo_link" href="./trangchu.html">
+                        <img src="./images/logo.jpg" alt="" height="110">
+                    </a>
+                </div>
+
+                <ul class="row col-lg-7 col-md-12 col-sm-12 col-12">
+
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-desktop" style="--bs-scroll-height: 100px;">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./trangchu.html">Trang chủ</a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour miền bắc</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour Miền trung</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour miền nam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./news.html">Tin tức</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+                </ul>
+                <div class="col-lg-3 no-margin no-padding header-search-tour">
+                    <form class="d-flex ">
+                        <input class="form-control me-2 " type="search" placeholder="Tìm tour" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </header>
+        <!-- header mobile -->
+        <header class=" header-mobile">
+            <div class="container-fluid row">
+                <div class=" col-md-3 col-sm-3 col-3 no-margin no-padding">
+                    <a class="logo_link-mobile" href="./trangchu.html">
+                        <img src="./images/logo.jpg" alt="">
+                    </a>
+                </div>
+                <div class=" col-md-9 col-sm-9 col-9 no-padding no-padding search header-search-tour">
+
+                    <form class="d-flex ">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row no-padding ">
+                <ul class=" col-md-12 col-sm-12 col-12   no-padding ">
+                    <nav class="navbar navbar-expand-lg  ">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler bg-danger " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fas fa-align-left"></i></span>
+                        </button>
+                            <div class="collapse navbar-collapse bg-danger" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-mobile">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./trangchu.html">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour miền bắc</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour Miền trung</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./List-Tour.html">Tour miền nam</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./news.html">Tin tức</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </ul>
+
+            </div>
+        </header>
+        <!-- content -->
+        <div class="content">
+            <div class="container-fluid no-margin">
+                <div class="block-img-detail">
+                    <img src="./images/img-new-detail/new-transport-bg.jpg" alt="">
+                    <h1 class="font-effect text-center en">
+                        Transport within Vietnam
+                    </h1>
+                </div>
+            </div>
+            <div class="container-content-detail row no-margin no-padding">
+                <div class="block-new-detail ">
+                    <div class="wrap-share text-right">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-flickr"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-wpexplorer"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="overview">
+                        <div class="overview-text">
+                            <p>Cũng giống như sự đa dạng của các cảnh quan, Việt Nam cung cấp nhiều cách khác nhau để đi lại. Bạn có thể thích đi xe máy lướt gió, bay thẳng từ điểm này đến điểm khác, hoặc đi các tuyến đường bộ của xe lửa và xe buýt, đắm
+                                mình trong các thắng cảnh trên đường đi.</p>
+                            <p>Với một chút kế hoạch (và một tinh thần mạo hiểm), bạn thường có thể đến nơi bạn muốn một cách dễ dàng và thoải mái. Trong các thành phố có rất nhiều taxi, xe buýt và xe xích lô; và ở vùng nông thôn, đi xe đạp thường là một
+                                lựa chọn hấp dẫn. Dưới đây là tổng quan về các lựa chọn vận chuyển của bạn trong Việt Nam.
+                            </p>
+                        </div>
+                        <hr>
+                        <h3>Các chuyến bay tại Việt Nam</h3>
+                        <p><img src="./images/img-new-detail/new-transport-img-detail-1.jpg" alt=""></p>
+                        <p>Đối với những người có thời gian ngắn, bay là cách thuận tiện nhất để xem một số điểm đến trong Việt Nam. Nhiều du khách đánh giá thấp khoảng cách (và tình trạng đường xá) giữa các thành phố và chọn xe buýt hoặc xe lửa thay vì
+                            đi máy bay. Cần lưu ý rằng các chuyến tàu từ Hà Nội đến Thành phố Hồ Chí Minh có thể mất tới 30 giờ và từ miền Trung Việt Nam đến một trong hai điểm là 16 giờ khá phổ biến. Vì vậy, sẽ rất hợp lý nếu bạn chọn đi máy bay kéo
+                            dài một hoặc hai giờ và dành nhiều thời gian hơn ở điểm đến của bạn. Giá vé nội địa hợp lý đến bất ngờ và có các chuyến bay hàng ngày đến tất cả các điểm đến hàng đầu của đất nước.
+                        </p>
+                        <h4><strong>
+                            <a href="http://www.vietnamairlines.com/" class="ext" target="_blank"
+                                    rel="noopener noreferrer">Vietnam Airlines<span class="ext"
+                                        aria-label="(link is external)"></span></a>&nbsp;</strong>is the national carrier and has the most flights daily, while&nbsp;<strong><a
+                                    href="http://www.vietjetair.com/Sites/Web/en-US/Home" class="ext" target="_blank"
+                                    rel="noopener noreferrer">Vietjet<span class="ext"
+                                        aria-label="(link is external)"></span></a>, <a
+                                    href="https://www.bambooairways.com/vn-en/" class="ext" target="_blank"
+                                    rel="noopener noreferrer">Bamboo Airways<span class="ext"
+                                        aria-label="(link is external)"></span></a></strong> and <strong><a
+                                    href="https://www.pacificairlines.com/vn/en/" class="ext" target="_blank"
+                                    rel="noopener noreferrer">Pacific Airlines<span class="ext"
+                                        aria-label="(link is external)"></span></a></strong><strong>&nbsp;</strong>both offer affordable deals for short hops around the country.
+                        </h4>
+                        <br>
+                        <p class="transport-img">
+                            <img src="./images/img-new-detail/new-transport-img-detail-2.jpg" alt="">
+                        </p>
+                        <hr>
+                        <h3>Xe lửa ở Việt Nam</h3>
+                        <p><img src="./images/img-new-detail/new-transport-img-detail-3.jpg" alt=""></p>
+                        <p>Trung bình khoảng 40km một giờ, các chuyến tàu của Việt Nam là một cách khám phá sâu sắc và thư giãn để đi khắp đất nước. Miền Bắc và miền Nam được kết nối bằng một mạng lưới đường ray dài 2.600 km do <a href="http://www.vr.com.vn/en"
+                                target="_blank">Đường sắt Việt Nam</a> quản lý. Con đường mòn xuyên quốc gia từ thành phố Hồ Chí Minh đến biên giới Trung Quốc. Mùa xuân cho những chiếc ghế êm ái và cabin bốn bến để có thêm một chút thoải mái, hoặc tung tăng
+                            trên một trong những chiếc xe ngủ du lịch tư nhân hiện đã có sẵn cho một số tuyến đường trọng điểm. Tuyến đường sắt đang được cải tạo vì hầu hết các đường ray hiện có đều có từ thời thuộc địa, vì vậy hãy nhớ nghiên cứu trước
+                            khi bạn đi</p>
+                        <hr>
+                        <h3>Xe máy ở Việt Nam</h3>
+                        <p><img src="./images/img-new-detail/new-transport-img-detail-4.jpg" alt=""></p>
+                        <p>Phương thức giao thông tinh túy của Việt Nam, xe máy là phương tiện thuận tiện nhất để di chuyển trong quãng đường ngắn. Những du khách độc hành có thể thích thử đi xe đạp đường dài để tận hưởng cuộc phiêu lưu và tầm nhìn ngoạn
+                            mục. Những người mới học lái xe ô tô nên cẩn thận trên đường phố Việt Nam và quan sát phong cách lái xe của địa phương, theo kiểu xuôi và ngược dòng hơn là 'tuân theo các quy tắc'. Bạn sẽ tìm thấy các cửa hàng cho thuê xe máy
+                            ở hầu hết các thành phố. Giá tùy theo chất lượng xe, dao động 150.000 - 300.000 đồng / ngày đối với xe tay ga và xe gắn máy. Bạn có thể để lại một khoản tiền đặt cọc hoặc hộ chiếu của mình nếu bạn đang thuê nhà trong hơn một
+                            tuần. Khi ở Việt Nam, đừng bao giờ đậu xe máy mà không có người trông coi, luôn đội mũ bảo hiểm và nhớ kiểm tra số vé nếu bạn để xe trong bãi đậu xe.</p>
+                        <hr>
+                        <h3>Xe đạp ở Việt Nam</h3>
+                        <p><img src="./images/img-new-detail/new-transport-img-detail-5.jpg" alt=""></p>
+                        <p>Dù bạn là một người đam mê đi xe đạp hay bây giờ chỉ thích đạp một chút, Việt Nam sẽ đánh thức tình yêu của bạn đối với phương tiện giao thông này. Mặc dù có thể đạp xe trong các thành phố, các thị trấn nhỏ và các điểm đến bãi
+                            biển của Việt Nam là nơi hoàn hảo cho những chuyến du ngoạn bằng xe hai bánh. Một số tour du lịch có hướng dẫn viên tốt nhất của đất nước trên thực tế là các chuyến tham quan bằng xe đạp. Bạn sẽ tìm thấy những thứ này ở Đồng
+                            bằng sông Cửu Long và miền Trung Việt Nam. Ở các thành phố như Hội An và Huế, bạn có thể đến hầu hết mọi nơi bạn muốn bằng xe đạp (nhiều người dân địa phương làm vậy.) Giá thuê thường khoảng 20.000 đến 30.000 đồng mỗi ngày
+                            (khoảng 1 đô la).</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <footer>
+            <div class="block-footer">
+                <div class="row no-margin footer-widget footer-widget--1">
+                    <div class="col-lg-4 block-footer-detail">
+                        <dl>
+                            <dt>
+                                <h4>ĐĂNG KÝ NHẬN BẢN TIN CỦA CHÚNG TÔI</h4>
+                            </dt>
+                            <dd>Nhận những câu chuyện du lịch mới từ Việt Nam mỗi tháng một lần trong hộp thư đến của bạn</dd>
+                            <dd>
+                                <form action="" method="post" id="mc-embedded-subscribe-form" name="form-newsletter" class="validate form-newsletter" target="_blank" novalidate="novalidate">
+                                    <p><input type="email" value="" name="EMAIL" placeholder=" Your email "></p>
+                                    <p><button name="sign up" class="bg-red-corners">Đăng ký</button></p>
+                                    <span class="error response" id="mce-error-response" style="display:none"></span>
+                                    <span class="error response" id="mce-success-response" style="display:none"></span>
+                                </form>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-3 block-footer-detail-2">
+                        <dl>
+                            <dt>
+                                <h4 data-nid="138">LIÊN HỆ</h4>
+                            </dt>
+                            <dd class="clearfix">
+                                <ul class="no-padding">
+                                    <li><a href="#">1900 2083</a></li>
+                                    <li><a href="#">event@mytour.vn</a></li>
+                                    <li><a href="#">Văn Phòng: Tầng 11 tòa nhà Peak View, 36 Hoàng Cầu, Đống Đa, Hà Nội</a></li>
+                                    <li><a href="#">Showroom: 168 Xã Đàn, Phương Liên, Đống Đa, Hà Nội</a></li>
+
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-lg-4 block-footer-detail ">
+                        <dl>
+                            <dt>
+                                <h4>THEO DÕI CHÚNG TÔI TẠI</h4>
+                            </dt>
+                            <dd>
+                                <ul class="social no-padding">
+                                    <li>
+                                        <a target="_blank" href="https://www.facebook.com/vietnamtourismboard/" title="Facebook" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2020-07/Vietnam%20tourism%20social%20web-2_4.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/vietnamtourismboard/" title="Youtube" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2020-07/Vietnam%20tourism%20social%20web-3_6.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.instagram.com/vietnamtourismboard/" title="Instagram" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2020-07/Vietnam%20tourism%20social%20web-4_4.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.pinterest.com/vietnamtourismboard/" title="Pinterest" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2020-07/Vietnam%20tourism%20social%20web_4.jpg"></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.tiktok.com/@vietnamtourismboard?lang=en" title="TikTok" class="social" rel="noopener noreferrer"><img src="https://vietnam.travel/sites/default/files/2021-02/Vietnam%20tourism.jpg"></a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="logo" target="_blank" rel="noopener noreferrer"><img src="./images/logo-bw.png" alt=""></a>
+                            </dd>
+                            <dd>
+                                <p class="desc">Chào mừng bạn đến với trang web chính thức của Tổng cục Du lịch Việt Nam. Ghé thăm các trang mạng xã hội của chúng tôi để có thêm cảm hứng du lịch.</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright container">
+                <a href="#" class="btn-backtop">Back to top<img src="/themes/custom/vietnamtourism/images/icon-arrow-up.png" alt=""></a>
+                <div class="row block-rule">
+                    <div class="col-md-9 col-md-push-3">
+                        <ul class="copyright-rule">
+                            <li> © 2016 Trang web chính thức Du lịch Việt Nam</li>
+                            <!-- <li>
+                                <a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="/term-conditions" title="Terms &amp; Conditions">Terms &amp; Conditions</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./Js/Event.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script type="text/javascript">
+        $('.responsive').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script> -->
+
+</body>
+
+</html>
+
+</body>
+
+</html>
