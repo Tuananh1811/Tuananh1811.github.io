@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết dự án</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/project-location.css">
+    <link rel="stylesheet" href="./css/project-detail.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="app">
+        <div class="header">
+
+            <div class="header-top">
+                <div class="block-social container">
+
+                    <ul class="social container-fluid no-margin no-padding">
+                        <li class="">
+                            <i class="color-w fa-solid fa-envelope"></i>
+                            <span>support@cnctech.com</span>
+                        </li>
+
+                        <li class=""><i class="color-w fa-solid fa-phone"></i> <span>12345678</span></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <nav class="row no-padding no-margin">
+                        <div class="col-lg-3 logo">
+                            <a href="./home.html">CNC Industrial</a>
+                        </div>
+
+                        <div class="col-lg-9 navbar-main">
+                            <ul class="navbar-menu">
+                                <li class="navbar-menu-item"><a href="./home.html" class="navbar-menu-item-link">Trang chủ</a></li>
+                                <li class="navbar-menu-item">
+                                    <a href="./intro.html" class=" navbar-menu-item-link">Giới thiệu</a>
+                                </li>
+                                <li class="navbar-menu-item">
+                                    <a href="./project.html" class="active navbar-menu-item-link">Dự án</a>
+                                    <div class="dropdown_menu">
+                                        <div class="menu__child-item">
+                                            <h4>Vĩnh Phúc</h4>
+                                            <ul class="menu__child-list">
+                                                <li><a href="./project-location.html">KCN Bá Thiện</a></li>
+                                                <li><a href="">KCN Thăng Long</a></li>
+                                                <li><a href="">KCN Bình Xuyên</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="menu__child-item">
+                                            <h4>Hà Nam</h4>
+                                            <ul class="menu__child-list">
+                                                <li><a href="">demo item</a></li>
+                                                <li><a href="">demo item</a></li>
+                                                <li><a href="">demo item</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu__child-item">
+                                            <h4>Hồ Chí Minh</h4>
+                                            <ul class="menu__child-list">
+                                                <li><a href="">demo item</a></li>
+                                                <li><a href="">demo item</a></li>
+                                                <li><a href="">demo item</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="menu__child-item">
+                                            <h4>Bắc Ninh</h4>
+                                            <ul class="menu__child-list">
+                                                <li><a href="">demo item</a></li>
+                                                <li><a href="">demo item</a></li>
+                                                <li><a href="">demo item</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-menu-item">
+                                    <a href="./news.html" class=" navbar-menu-item-link">Tin tức</a>
+                                </li>
+                                <li class="navbar-menu-item">
+                                    <a href="./contact.html" class="navbar-menu-item-link">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <div class="block-search">
+
+                                <a class="search-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+
+                                <div class="dropdown-search">
+                                    <b>Search</b>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Tìm kiếm từ khóa." aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="multi-language">
+                                <span><i class="fa-solid fa-globe"></i>VIE <i class="fa-solid fa-angle-down"></i></span>
+                                <div class="dropdown-language">
+                                    <p><span>Vie</span><img src="./img/flag/vie-active.svg" alt=""></p>
+                                    <p><span>Enl</span><img src="./img/flag/vie-active.svg" alt=""></p>
+                                    <p><span>China</span><img src="./img/flag/vie-active.svg" alt=""></p>
+                                    <p><span>Japan</span><img src="./img/flag/vie-active.svg" alt=""></p>
+                                    <p><span>Korea</span><img src="./img/flag/vie-active.svg" alt=""></p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class=" project-detail field__item field-landing__item">
+            <div class="project-detail-big-img width100 ">
+                <div class="row two-img-big no-margin no-padding">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 no-margin no-padding">
+                        <img src="./img/project/0d97c809d065173b4e74.jpg" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 no-margin no-padding">
+                        <img src="./img/project/4c234b3d5351940fcd40.jpg" alt="">
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <div class="margin-top row no-padding no-margin slick block-partner">
+
+                            <div class="slick-partner  row responsive autoplay multiple-items">
+
+                                <div class="height-200 col-lg-3 col-md-3 col-sm-4 col-6  block-slick-partner">
+                                    <div class="partner-img-slick height-100 ">
+                                        <img src="./img/project/0d97c809d065173b4e74.jpg" class="partner-img-slick-style height-100">
+                                    </div>
+
+
+                                </div>
+                                <div class="height-200 col-lg-3 col-md-3 col-sm-4 col-6  block-slick-partner">
+                                    <div class="partner-img-slick height-100 ">
+                                        <img src="./img/project/0d97c809d065173b4e74.jpg" class="partner-img-slick-style height-100">
+                                    </div>
+
+
+                                </div>
+                                <div class="height-200 col-lg-3 col-md-3 col-sm-4 col-6  block-slick-partner">
+                                    <div class="partner-img-slick height-100 ">
+                                        <img src="./img/project/0dc3f3f1ef9d28c3718c.jpg" class="partner-img-slick-style height-100">
+                                    </div>
+
+
+                                </div>
+                                <div class="height-200 col-lg-3 col-md-3 col-sm-4 col-6  block-slick-partner">
+                                    <div class="partner-img-slick height-100 ">
+                                        <img src="./img/project/4c234b3d5351940fcd40.jpg" class="partner-img-slick-style height-100">
+                                    </div>
+
+
+                                </div>
+                                <div class="height-200 col-lg-3 col-md-3 col-sm-4 col-6  block-slick-partner">
+                                    <div class="partner-img-slick height-100 ">
+                                        <img src="./img/project/97c219d402b8c5e69ca9.jpg" class="partner-img-slick-style height-100">
+                                    </div>
+
+
+                                </div>
+                                <div class="height-200 col-lg-3 col-md-3 col-sm-4 col-6  block-slick-partner">
+                                    <div class="partner-img-slick height-100 ">
+                                        <img src="./img/project/c2e8838498e85fb606f9.jpg" class="partner-img-slick-style height-100">
+                                    </div>
+
+
+                                </div>
+                                <div class="height-200 col-lg-3 col-md-3 col-sm-4 col-6  block-slick-partner">
+                                    <div class="partner-img-slick height-100 ">
+                                        <img src="./img/project/0d97c809d065173b4e74.jpg" class="partner-img-slick-style height-100">
+                                    </div>
+
+
+                                </div>
+                                <div class="height-200 col-lg-3 col-md-3 col-sm-4 col-6  block-slick-partner">
+                                    <div class="partner-img-slick height-100 ">
+                                        <img src="./img/project/c2e8838498e85fb606f9.jpg" class="partner-img-slick-style height-100">
+                                    </div>
+
+
+                                </div>
+                                <div class="height-200 col-lg-3 col-md-3 col-sm-4 col-6  block-slick-partner">
+                                    <div class="partner-img-slick height-100 ">
+                                        <img src="./img/project/0d97c809d065173b4e74.jpg" class="partner-img-slick-style height-100">
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <img src="./img/project/0d97c809d065173b4e74.jpg" alt=""> -->
+            </div>
+            <div class="width100 bg-gra ">
+                <div class="width80 padding-20 " data-aos="fade-up" data-aos-duration="1200">
+                    <p class="brearkcum ">Trang chủ / <span>Dự án</span> / <span>SHP-F31 Nhà máy được xây dựng sẵn sàng cho thuê ở Bá Thiện</span></p>
+                    <h2 class="color-w">SHP-F31 Nhà máy được xây dựng sẵn sàng cho thuê ở Bá Thiện</h2>
+                    <p class="font-i color-w">Bình Xuyên, Vĩnh Phúc</p>
+                    <hr class="color-w">
+                    <div class="row no-margin no-padding">
+                        <div class="col-lg-4 no-margin no-padding col-md-6 col-sm-6 col-12">
+                            <p class="font-i"><i class="fa-solid fa-chart-area color-w padding-i font-i"></i> <span class="color-w">Toàn bộ khu vực: <span>140900</span> m²</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 no-margin no-padding col-md-6 col-sm-6 col-12">
+                            <p class="font-i"><i class="fa-solid fa-chart-area color-w padding-i font-i"></i> <span class="color-w">Khu vực trống: <span>96000</span> m²</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 no-margin no-padding col-md-6 col-sm-6 col-12">
+                            <p class="font-i"><i class="fa-solid fa-money-check-dollar color-w padding-i font-i"></i> <span class="color-w">Giá: <span>Liên hệ</span> </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="field__item field-landing__item">
+            <div class="width80 padding-20">
+                <div class="content-pro-container">
+
+                    <div class="content-pro-detail-container">
+                        <div class="content-intro-pro row no-margin no-padding">
+                            <div data-aos="fade-right" data-aos-duration="2000" class="col-lg-6 content-img no-padding no-margin">
+
+                                <div class="row no-margin no-padding col-lg-12 ">
+                                    <div class="box-big-img ">
+                                        <a href="#">
+                                            <img src="./img/project/0d97c809d065173b4e74.jpg" alt="" id="big-img">
+
+                                        </a>
+                                    </div>
+                                    <div class="box-images-list col-lg-12 no-padding no-margin">
+                                        <ul class="row no-margin no-padding">
+                                            <li class="col-lg-2 col-md-3 col-sm-2 col-3 no-margin no-padding ">
+                                                <a href="#">
+                                                    <img src="./img/project/0dc3f3f1ef9d28c3718c.jpg" alt="" class="small-img">
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-2 col-md-3 col-sm-2 col-3 no-margin no-padding ">
+                                                <a href="#">
+                                                    <img src="./img/project/4c234b3d5351940fcd40.jpg" alt="" class="small-img">
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-2 col-md-3 col-sm-2 col-3 no-margin no-padding ">
+                                                <a href="#">
+                                                    <img src="./img/project/97c219d402b8c5e69ca9.jpg" alt="" class="small-img">
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 no-margin no-padding content-pro">
+                                <h3 class="style_h2">SHP-F31 Nhà máy được xây dựng sẵn sàng cho thuê ở Bá Thiện</h3>
+                                <p><b class="style-b">Diện tích:</b> <span class="style-span style-b">1000m2</span> <b class="style-b">Vị trí: </b><span class="style-b">Vĩnh Phúc</span></p>
+                                <b class="style-b">Thông tin:</b>
+                                <h6 class="style-h6"><i class="fa-brands fa-slack"></i> tổng quan dự án</h6>
+                                <p>Bất động sản có diện tích xây dựng là 14.354 m2, bao gồm hai nhà xưởng (mỗi khu là 6.825 m2) và diện tích hỗ trợ là 704 m2. Nó có một vị trí lý tưởng tại tỉnh Bình Dương. Cách trung tâm HCM chỉ 43 km, cảng Cát Lái 47 km,
+                                    cao tốc Mỹ Phước chỉ 200 m. Dự án này có tiềm năng cho ngành sản xuất đồ nội thất hoặc các ngành sản xuất khác, và cũng có thể cho các nhà đầu tư logistics hoặc thương mại điện tử với khả năng tiếp cận các khách thuê
+                                    chủ chốt tại tỉnh Bến Cát – Bình Dương. </p>
+                                <p class="intro-p"><span>1</span>. <span>Mật độ xây dựng</span>: <span>50%</span></p>
+                                <p class="intro-p"><span>2</span>. <span>Thiết kế</span>: <span> 5 tòa trong đó 2 tòa cao 29 tầng, 3 tòa cao 25 tầng, 2 tầng hầm liên thông các tòa.</span></p>
+                                <p class="intro-p"><span>3</span>. <span>Chủ đầu tư</span>: <span>CNCTech</span></p>
+                                <div class="btn-submit">
+                                    <button type="button" data-bs-toggle="modal" class="btn-contact" data-bs-target="#exampleModal">
+                                        Liên hệ ngay
+                                    </button>
+                                    <button class="btn-login-email"><a href="./Contact.html" style="color:#fff">Đăng kí nhận tin</a> </button>
+                                </div>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title color-w" id="exampleModalLabel">Nhận thông tin chi tiết dự án</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                            </div>
+                                            <div class="modal-decs">
+                                                <p>Xin vui lòng gửi thông tin liên hệ của bạn vào form dưới đây. Chúng tôi sẽ gửi thông tin chi tiết của dự án cho bạn trong thời gian sớm nhất. Xin cám ơn!</p>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <form action="" class="form ">
+                                                    <div class="form-infor row no-margin no-padding">
+                                                        <div class="form-input col-lg-6">
+                                                            <label for="">Họ</label>
+                                                            <input type="text" name="" placeholder="Nhập Tên." id="">
+                                                        </div>
+                                                        <div class="form-input col-lg-6">
+                                                            <label for="">Tên</label>
+                                                            <input type="text" name="" placeholder="Nhập Tên." id="">
+                                                        </div>
+                                                        <div class="form-input col-lg-6">
+                                                            <label for="">Email</label>
+                                                            <input type="Email" name="" placeholder="Nhập Tên." id="">
+                                                        </div>
+                                                        <div class="form-input col-lg-6">
+                                                            <label for="">Số điện thoại</label>
+                                                            <input type="text" name="" placeholder="Nhập Tên." id="">
+                                                        </div>
+
+
+                                                        <div class="form-input-lable col-ld-12">
+                                                            <label for="">Thông điệp</label>
+                                                            <textarea name="message" id="" cols="10" rows="5">
+                            
+                                                            </textarea>
+                                                        </div>
+
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                <button type="button" class="btn btn-send">Gửi yêu cầu</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-gra field__item field-landing__item">
+            <div class=" width80 ">
+                <div class=" more-benefit row no-margin no-padding">
+                    <div class="col-lg-7">
+                        <h3 class="color-w padding-20" data-aos="fade-right" data-aos-duration="1000">Các tính năng chính</h3>
+                        <div class="row no-margin no-padding">
+                            <div class="col-lg-6 padding-20 color-w" data-aos="fade-up" data-aos-duration="2000">
+                                <span class="color-orange font-i"><i class="color-orange fa-solid fa-angles-right"></i></span> Nằm ở vị trí chiến lược bên trong khu công nghiệp thuộc cụm công nghiệp nổi tiếng - Tỉnh Bình Dương
+                            </div>
+                            <div class="col-lg-6 padding-20  color-w" data-aos="fade-up" data-aos-duration="1400">
+                                <span class="color-orange font-i"><i class="color-orange fa-solid fa-angles-right"></i></span> Cơ sở này trước đây là một nhà máy năng lượng mặt trời, và bây giờ chủ sở hữu hiện tại mong muốn chuyển nhượng để đa dạng hóa
+                                hoạt động kinh doanh ngoài Việt Nam.
+                            </div>
+                            <div class="col-lg-6 padding-20  color-w" data-aos="fade-up" data-aos-duration="1500">
+                                <span class="color-orange font-i"><i class=" color-orange fa-solid fa-angles-right"></i></span> Nằm ở vị trí chiến lược bên trong khu công nghiệp thuộc cụm công nghiệp nổi tiếng - Tỉnh Bình Dương
+                            </div>
+                            <div class="col-lg-6  padding-20  color-w" data-aos="fade-up" data-aos-duration="1600">
+                                <span class="color-orange font-i"><i class=" color-orange fa-solid fa-angles-right"></i></span> Cơ cấu thỏa thuận rõ ràng với 100% cổ phần của SPV được chào bán
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="benefit-img width100 padding-60">
+                            <img src="./img/project/0dc3f3f1ef9d28c3718c.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__item field-landing__item">
+            <div class="width80">
+                <div class="row quickview">
+                    <div data-aos="fade-right" data-aos-duration="2000" class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <h3 style="padding-left:20px">Sơ lược</h3>
+                        <p class="padding-20 text-justify">Khu công nghiệp đa ngành do chủ đầu tư phát triển khu công nghiệp uy tín hàng đầu Miền Bắc Việt Nam làm chủ đầu tư, cung cấp đất nền giá cạnh tranh chỉ từ $50/m2 ngay trung tâm tỉnh Thanh Hóa. Nằm trên trục đường chính Quốc gia
+                            từ Hà Nội đi Thanh Hóa, miền Trung và miền Nam, kết nối kinh tế miền Bắc với vùng kinh tế miền Trung, cũng là vị trí chiến lược, nơi có tuyến đường cao tốc CT1 từ Hà Nội vào khu công nghiệp.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" class="col-lg-6  col-md-6 col-sm-12 col-12 no-margin no-padding">
+                        <h3 style="padding-left:20px">Khả năng tiếp cận</h3>
+
+                        <div class="width100 padding-20 box-shadow">
+                            <div class=" acces  width100  row no-margin no-padding">
+                                <div class="col-lg-6 col-md-6col-sm-6 col-6 row aline-item no-margin padding-20">
+                                    <div class="col-lg-5 aline-item">
+                                        <p class="text-left"><i class="font-i-30 fa-solid fa-building-columns text-left"></i></p>
+                                    </div>
+                                    <div class="col-lg-7 no-padding">
+                                        <b>Trung tâm Hà Nội</b>
+                                        <br>
+                                        <span>60km</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 row aline-item no-margin padding-20">
+                                    <div class="col-lg-5 aline-item">
+                                        <p class="text-left"><i class="font-i-30 text-center fa-solid fa-plane-departure"></i></p>
+                                    </div>
+                                    <div class="col-lg-7 no-padding">
+                                        <b>Sân bay Nội Bài</b>
+                                        <br>
+                                        <span>50km</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 row aline-item no-margin padding-20">
+                                    <div class="col-lg-5 aline-item">
+                                        <p class="text-left"><i class="font-i-30 text-center fa-solid fa-anchor"></i></p>
+                                    </div>
+                                    <div class="col-lg-7 no-padding">
+                                        <b>Cảng Hải Phòng</b>
+                                        <br>
+                                        <span>220km</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 row aline-item no-margin padding-20">
+                                    <div class="col-lg-5 aline-item">
+                                        <p class="text-left"><i class="font-i-30 text-center fa-solid fa-road"></i></p>
+                                    </div>
+                                    <div class="col-lg-7 no-padding">
+                                        <b>Cao tốc Hà Nội- Hạ Long</b>
+                                        <br>
+                                        <span>60km</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__item field-landing__item">
+            <div class="width80">
+                <div class="row width100 infor-project">
+                    <div data-aos="fade-right" data-aos-duration="2000" class="col-lg-6">
+                        <b>Thương mại</b>
+                        <table class="table table-striped ">
+
+                            <tbody>
+                                <tr>
+
+                                    <td>Pháp Lý</td>
+                                    <td>GCNQSDĐ - được xác nhận bởi chủ sở hữu Phí QSDĐ - Được thanh toán trước bởi chủ sở hữu</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>Thời hạn SDĐ</td>
+                                    <td>2056</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>Giá</td>
+                                    <td>Liên hệ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="2000" class="col-lg-6">
+                        <b>Kĩ thuật</b>
+                        <table class="table table-striped ">
+
+                            <tbody>
+                                <tr>
+
+                                    <td>Hệ thống điện</td>
+                                    <td>Voltage: 110/22kV</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>Hệ thống nước</td>
+                                    <td>Theo hệ thống trong khu công nghiệp</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>Hệ thống xử lý nước thải</td>
+                                    <td>Theo hệ thống trong khu công nghiệp</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Tiện ích</td>
+                                    <td>Hệ thống bảo vệ 24/7, hệ thống chữa cháy, hệ thống hút bụi, canteen</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>Trọng tải</td>
+                                    <td>2 tấn/m2</td>
+                                </tr>
+                                <tr>
+
+                                    <td>Chiều cao trần</td>
+                                    <td>7-10 m2</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>Giá</td>
+                                    <td>Liên hệ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="field__item field-landing__item">
+            <iframe data-aos="fade-up" data-aos-duration="1200" class="width100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.3184536516515!2d105.67281931461109!3d21.33793058583169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134e48fa1416341%3A0xdc77321c8a756801!2zS2h1IEPDtG5nIG5naGnhu4dwIELDoSBUaGnhu4duIDI!5e0!3m2!1svi!2s!4v1666260018189!5m2!1svi!2s"
+                height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="field__item field-landing__item">
+            <div data-aos="fade-left" data-aos-duration="2000" class="width80 row product-location-item">
+                <h3 class="text-upp text-center">Dự án liên quan</h3>
+                <div class="list-project-item col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="list-project-item-img">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/project/0d97c809d065173b4e74.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/project/0dc3f3f1ef9d28c3718c.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/project/4c234b3d5351940fcd40.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list-project-item-text">
+                        <h5 class="text-upp">Cho Thuê Nhà Máy Tại Bá Thiện </h5>
+                        <hr>
+                        <p><i class="fa-solid fa-location-dot padding-i font-i"></i><span>Bình Xuyên, Vĩnh Phúc</span></p>
+                        <p><i class="fa-solid fa-building-user padding-i font-i"></i><span>Loại cho thuê: <span>Xưởng</span> </span>
+                        </p>
+                        <p><i class="fa-solid fa-chart-area padding-i font-i"></i><span>Toàn bộ khu vực: <span>140900 m²</span> </span>
+                        </p>
+                        <a>Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="list-project-item col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="list-project-item-img">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/project/0d97c809d065173b4e74.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/project/0dc3f3f1ef9d28c3718c.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/project/4c234b3d5351940fcd40.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list-project-item-text">
+                        <h5 class="text-upp">Cho Thuê Nhà Máy Tại Bá Thiện </h5>
+                        <hr>
+                        <p><i class="fa-solid fa-location-dot padding-i font-i"></i><span>Bình Xuyên, Vĩnh Phúc</span></p>
+                        <p><i class="fa-solid fa-building-user padding-i font-i"></i><span>Loại cho thuê: Đất</span></p>
+                        <p><i class="fa-solid fa-chart-area padding-i font-i"></i><span>Toàn bộ khu vực: <span>140900 m²</span> </span>
+                        </p>
+                        <a>Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="list-project-item col-lg-4 col-md-4 col-sm-6 col-12">
+                    <div class="list-project-item-img">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/project/0d97c809d065173b4e74.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/project/0dc3f3f1ef9d28c3718c.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/project/4c234b3d5351940fcd40.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="list-project-item-text">
+                        <h5 class="text-upp">Cho Thuê Nhà Máy Tại Bá Thiện </h5>
+                        <hr>
+                        <p><i class="fa-solid fa-location-dot padding-i font-i"></i><span>Bình Xuyên, Vĩnh Phúc</span></p>
+                        <p><i class="fa-solid fa-chart-area padding-i font-i"></i><span>Toàn bộ khu vực: <span>140900 m²</span> </span>
+                        </p>
+                        <a>Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000" class="field__item field-landing__item bg-gra">
+            <div class="width80 get-start">
+
+                <h2>BẮT ĐẦU NÀO</h2>
+                <p>Mỗi kết nối bắt đầu bằng một cuộc trò chuyện. Nhóm của chúng tôi ở đây để giúp đỡ.</p>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="no-margin p-upp">Liên hệ chúng tôi</p>
+                        <a class="padding-a margin-a" href="./contact.html"><i class="color-w font-i fa-regular fa-envelope"></i></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="no-margin p-upp">Địa điểm văn phòng</p>
+                        <a class="padding-a margin-a" href="./contact.html"><i class="color-w font-i fa-solid fa-location-dot"></i></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="no-margin p-upp">Liên hệ chúng tôi</p>
+                        <a class="padding-a margin-a" href="./contact.html"><i class="color-w font-i fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row footer-container">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 aline-item">
+                        <h1>CNCTech</h1>
+                        <p>Lot F1-2-3, Thang Long 3 IP. Binh Xuyen, Vinh Phuc Vietnam
+                        </p>
+
+                    </div>
+                    <div class="col-lg-5 col-md-4 col-sm-6 col-12">
+                        <iframe class="width100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.1201567204284!2d105.65750051461043!3d21.306267985848628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134e590fe630957%3A0xddf65fd7a8dfd81e!2sCNCTech%20Th%C4%83ng%20Long!5e0!3m2!1svi!2s!4v1666151560639!5m2!1svi!2s"
+                            height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 nav-footer">
+                        <p><a href="./home.html">Trang chủ</a></p>
+                        <p><a href="./home.html">Giới thiệu</a></p>
+                        <p><a href="./home.html">Dự án</a></p>
+                        <p><a href="./home.html">Tin tức</a></p>
+                        <p><a href="./home.html">Liên hệ</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-12 nav-footer">
+                        <p><a href="">Chính sách bảo mật</a></p>
+                        <p><a href="">Điều khoản sử dụng</a></p>
+                        <p><a href="">khả năng tiếp cận</a></p>
+                        <p><a href="">Dành cho nhân viên</a></p>
+
+                    </div>
+
+                </div>
+                <div class="row copyright">
+                    <div class="col-lg-3">
+                        <span>© 2022 CNCTech, Inc. All rights reserved.</span>
+                    </div>
+                    <div class="col-lg-9 text-right">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Js/event.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/16daad8c17.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript">
+        $('.responsive').slick({
+            dots: true,
+            infinite: true,
+            speed: 700,
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script>
+</body>
+
+</html>

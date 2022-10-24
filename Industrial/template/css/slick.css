@@ -1,0 +1,138 @@
+.slick {
+    background-color: #fff;
+    /* margin-top: 30px !important; */
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+.partner-title {
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-background);
+}
+
+.partner-title span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.category_title {
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 500;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 5px;
+    text-transform: uppercase;
+}
+
+.slick-partner {
+    width: 90% !important;
+    margin: 20px auto !important;
+}
+
+.block-slick-partner {
+    box-shadow: 0px 10px 8px -5px #7f8fa6 !important;
+}
+
+.slick-partner .block-slick-partner:hover {
+    box-shadow: 0px 10px 8px -5px #7f8fa6;
+    cursor: pointer;
+}
+
+.partner-img-slick {
+    margin: 5px auto !important;
+    text-align: center !important;
+    display: block !important;
+    opacity: .8;
+}
+
+.product-img-slick:hover {
+    opacity: 1;
+}
+
+.partner-img-slick-style {
+    margin: 0 auto;
+    height: 100px;
+}
+
+.product-name-slick a:hover {
+    color: var(--primary-color);
+}
+
+
+/* .slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: black !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+button.slick-prev.slick-arrow {
+    display: none !important;
+}
+
+button.slick-next.slick-arrow {
+    display: none;
+}
+
+.slick-next .slick-arrow {
+    display: none !important;
+}
+
+
+/* .slick-next:before,
+.slick-prev:before {
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #000 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+
+/* slick tin tức */
+
+.slick-new {
+    width: 100% !important;
+    height: auto;
+}
+
+.slick-new-array {
+    width: 100%;
+    height: auto;
+}
+
+.slick-new-item {
+    padding: 20px !important;
+    height: auto;
+}
+
+.new-img-slick {
+    height: 240px;
+    width: 100%;
+}
+
+
+/* kết thức slick tin tức */
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .category_title {
+        margin-left: 31px;
+    }
+    .slick-prev:before {
+        content: '←';
+    }
+    .slick-next:before {
+        content: '\f061';
+    }
+}
