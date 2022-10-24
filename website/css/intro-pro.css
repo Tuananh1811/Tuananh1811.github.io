@@ -1,0 +1,19 @@
+.intro-content {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.intro-content h4 {
+    font-weight: bold;
+    color: #187770;
+    text-transform: uppercase;
+}
+
+.intro-content .space-icon {
+    padding-right: 10px;
+}
+
+.intro-content b {
+    margin-bottom: 10px !important;
+    display: block;
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách dự án</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/list-pro.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;500;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="block-social row container-fluid no-margin no-padding">
+
+            <ul class="social container-fluid no-margin no-padding">
+                <li class="">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>support@cnctech.com</span>
+                </li>
+
+                <li class=""><i class="fa-solid fa-phone"></i> <span>12345678</span></li>
+            </ul>
+
+        </div>
+        <!-- header-desktop -->
+        <div class="block-header">
+            <div class=" container-fluid header">
+                <!--Logo  -->
+                <div class="logo col-lg-2 col-md-2 col-sm-1 no-margin no-padding">
+                    <a class="logo_link" href="./Home.html">
+                        <img src="./img/logo/LOGO.png" alt="" class="stype_img-logo">
+                    </a>
+                </div>
+                <!-- menu chính -->
+                <div class="block-menu col-lg-8 col-md-9 col-sm-11">
+                    <ul class="menu ">
+                        <li class="menu-item"><a href="./Home.html" class="menu-item-link ">trang chủ </a></li>
+                        <li class="menu-item"><a href="" class="menu-item-link">Giới thiệu</a></li>
+                        <li class="menu-item"><a href="./list-pro.html" class="menu-item-link active">Các dự án <i
+                                    class="fa-sharp fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown_menu">
+                                <li class="dropdown-menu-item"><a class="dropdown-menu-item-link" href="">Bắc ninh</a>
+                                </li>
+                                <li class="dropdown-menu-item"><a class="dropdown-menu-item-link" href="">Hà Nam</a>
+                                </li>
+                                <li class="dropdown-menu-item"><a class="dropdown-menu-item-link" href="">Hà Nội</a>
+                                </li>
+                                <li class="dropdown-menu-item"><a class="dropdown-menu-item-link" href="">Hồ Chí
+                                        Minh</a></li>
+                                <li class="dropdown-menu-item"><a class="dropdown-menu-item-link" href="">Vĩnh Phúc </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="./news.html" class="menu-item-link">Tin tức</a></li>
+                        <li class="menu-item"><a href="./Contact.html" class="menu-item-link">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- đa ngôn ngữ desktop-->
+                <div class="block-laguage  block-menu col-lg-2 col-md-1 col-sm-1 ">
+
+                    <ul class="dropdown menu">
+                        <li class="dropdown-item">
+                            <a class="flag"><i class="fa-solid fa-language"></i>
+
+                            </a><i class="fa-sharp fa-solid fa-caret-down"></i>
+                            <ul class="sub-menu-flag">
+                                <li class="sub-menu-flag-item"><a class="sub-menu-flag-item-link" href="">Vietnam
+                                    </a><img class="flag-it" src="./img/vie-active.svg"></li>
+                                <li class="sub-menu-flag-item"><a class="sub-menu-flag-item-link" href="">England
+                                    </a><img class="flag-it" src="./img/flag-en.svg"></li>
+                                <li class="sub-menu-flag-item">
+                                    <a class="sub-menu-flag-item-link" href=" ">China </a>
+                                    <img src="./img/china.png" alt="">
+                                </li>
+                                <li class="sub-menu-flag-item ">
+                                    <a class="sub-menu-flag-item-link" href="">Japan </a><img src="./img/japan.png" alt="">
+                                </li>
+                                <li class="sub-menu-flag-item">
+                                    <a class="sub-menu-flag-item-link" href=" ">Korea </a>
+                                    <img src="./img/south-korea.png" alt="">
+                                </li>
+                            </ul>
+                        </li>
+                </div>
+
+            </div>
+            <div class="container-fluid header-mobile">
+
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner-collect">
+            <div class="block-banner-collect">
+                <img src="./img/collection/banner-collect.jpg" alt="">
+            </div>
+            <div class="banner-collect-title">
+                <h2>Tất cả dự án</h2>
+
+            </div>
+
+        </div>
+        <p class="brearkcum">Trang chủ / <span>Dự án</span></p>
+        <div class="block-fillter ">
+            <div class="block-fillter-container row">
+
+                <div class="block-fillter-content col-lg-2">
+                    Bộ lọc tìm kiếm:
+                </div>
+                <div class="block-fillter-content-select col-lg-10 row">
+                    <div class="block-fillter-content-select-input col-lg-3">
+                        <select name="" id="">
+                            <option value="Default">Mặc định</option>
+                            <option value="">Giá tăng dần</option>
+                            <option value="">Giá giảm dần</option>
+                            <option value="">Dự án mới</option>
+                            <option value="">Dự án cũ</option>
+                           
+                        </select>
+                    </div>
+                    <div class="block-fillter-content-select-input col-lg-3">
+                        <select name="" id="">
+                            <option value="Default">Loại bất động sản</option>
+                            <option value="">Giá tăng dần</option>
+                            <option value="">Giá giảm dần</option>
+                            <option value="">Dự án mới</option>
+                            <option value="">Dự án cũ</option>
+                           
+                        </select>
+                    </div>
+                    <div class="block-fillter-content-select-input col-lg-3">
+                        <select name="" id="">
+                            <option value="Default">Quận/huyện</option>
+                            <option value="">Giá tăng dần</option>
+                            <option value="">Giá giảm dần</option>
+                            <option value="">Dự án mới</option>
+                            <option value="">Dự án cũ</option>
+                           
+                        </select>
+                    </div>
+                    <div class="block-fillter-content-select-input col-lg-3">
+                        <select name="" id="">
+                            <option value="Default">Tỉnh/thành phố</option>
+                            <option value="">Giá tăng dần</option>
+                            <option value="">Giá giảm dần</option>
+                            <option value="">Dự án mới</option>
+                            <option value="">Dự án cũ</option>
+                           
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="block-list-pro ">
+            <div class="row-list-pro row no-margin no-padding">
+                <div class="col-lg-4 row-list-pro-item">
+                    <div class="row-list-pro-item-img">
+                        <img src="./img/slide/0dc3f3f1ef9d28c3718c.jpg" alt="">
+                    </div>
+                    <div class="pro-info ">
+                        <a href="">Căn hộ chung cư tại Vinhomes Golden River</a>
+                        <div class="product-bottom">
+                            <h6>Duy nhất căn 2 phòng ngủ bán lỗ tại Vinhomes Ba Son. Chị chủ nhà rất thân gửi bán căn Aqua 3 2</h6>
+                            <p><i class="fa-solid fa-location-pin"></i> <span>Vinhomes Golden River</span></p>
+                            <p><i class="fa-solid fa-building"></i> <span>Loại BĐS: </span> <span>Căn hộ</span></p>
+                            <p><i class="fa-solid fa-chart-area"></i>
+                                <Span>Diện tích: </Span> <span>100 m2</span></p>
+                        </div>
+                        <div class="wrap_price_item">
+                            <span>7,6 Tỷ</span>
+                            <a href="">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 row-list-pro-item">
+                    <div class="row-list-pro-item-img">
+                        <img src="./img/slide/0dc3f3f1ef9d28c3718c.jpg" alt="">
+                    </div>
+                    <div class="pro-info ">
+                        <a href="">Căn hộ chung cư tại Vinhomes Golden River</a>
+                        <div class="product-bottom">
+                            <h6>Duy nhất căn 2 phòng ngủ bán lỗ tại Vinhomes Ba Son. Chị chủ nhà rất thân gửi bán căn Aqua 3 2</h6>
+                            <p><i class="fa-solid fa-location-pin"></i> <span>Vinhomes Golden River</span></p>
+                            <p><i class="fa-solid fa-building"></i> <span>Loại BĐS: </span> <span>Căn hộ</span></p>
+                            <p><i class="fa-solid fa-chart-area"></i>
+                                <Span>Diện tích: </Span> <span>100 m2</span></p>
+                        </div>
+                        <div class="wrap_price_item">
+                            <span>7,6 Tỷ</span>
+                            <a href="">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 row-list-pro-item">
+                    <div class="row-list-pro-item-img">
+                        <img src="./img/slide/0dc3f3f1ef9d28c3718c.jpg" alt="">
+                    </div>
+                    <div class="pro-info ">
+                        <a href="">Căn hộ chung cư tại Vinhomes Golden River</a>
+                        <div class="product-bottom">
+                            <h6>Duy nhất căn 2 phòng ngủ bán lỗ tại Vinhomes Ba Son. Chị chủ nhà rất thân gửi bán căn Aqua 3 2</h6>
+                            <p><i class="fa-solid fa-location-pin"></i> <span>Vinhomes Golden River</span></p>
+                            <p><i class="fa-solid fa-building"></i> <span>Loại BĐS: </span> <span>Căn hộ</span></p>
+                            <p><i class="fa-solid fa-chart-area"></i>
+                                <Span>Diện tích: </Span> <span>100 m2</span></p>
+                        </div>
+                        <div class="wrap_price_item">
+                            <span>7,6 Tỷ</span>
+                            <a href="">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 row-list-pro-item">
+                    <div class="row-list-pro-item-img">
+                        <img src="./img/slide/0dc3f3f1ef9d28c3718c.jpg" alt="">
+                    </div>
+                    <div class="pro-info ">
+                        <a href="">Căn hộ chung cư tại Vinhomes Golden River</a>
+                        <div class="product-bottom">
+                            <h6>Duy nhất căn 2 phòng ngủ bán lỗ tại Vinhomes Ba Son. Chị chủ nhà rất thân gửi bán căn Aqua 3 2</h6>
+                            <p><i class="fa-solid fa-location-pin"></i> <span>Vinhomes Golden River</span></p>
+                            <p><i class="fa-solid fa-building"></i> <span>Loại BĐS: </span> <span>Căn hộ</span></p>
+                            <p><i class="fa-solid fa-chart-area"></i>
+                                <Span>Diện tích: </Span> <span>100 m2</span></p>
+                        </div>
+                        <div class="wrap_price_item">
+                            <span>7,6 Tỷ</span>
+                            <a href="">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 row-list-pro-item">
+                    <div class="row-list-pro-item-img">
+                        <img src="./img/slide/0dc3f3f1ef9d28c3718c.jpg" alt="">
+                    </div>
+                    <div class="pro-info ">
+                        <a href="">Căn hộ chung cư tại Vinhomes Golden River</a>
+                        <div class="product-bottom">
+                            <h6>Duy nhất căn 2 phòng ngủ bán lỗ tại Vinhomes Ba Son. Chị chủ nhà rất thân gửi bán căn Aqua 3 2</h6>
+                            <p><i class="fa-solid fa-location-pin"></i> <span>Vinhomes Golden River</span></p>
+                            <p><i class="fa-solid fa-building"></i> <span>Loại BĐS: </span> <span>Căn hộ</span></p>
+                            <p><i class="fa-solid fa-chart-area"></i>
+                                <Span>Diện tích: </Span> <span>100 m2</span></p>
+                        </div>
+                        <div class="wrap_price_item">
+                            <span>7,6 Tỷ</span>
+                            <a href="">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 row-list-pro-item">
+                    <div class="row-list-pro-item-img">
+                        <img src="./img/slide/0dc3f3f1ef9d28c3718c.jpg" alt="">
+                    </div>
+                    <div class="pro-info ">
+                        <a href="">Căn hộ chung cư tại Vinhomes Golden River</a>
+                        <div class="product-bottom">
+                            <h6>Duy nhất căn 2 phòng ngủ bán lỗ tại Vinhomes Ba Son. Chị chủ nhà rất thân gửi bán căn Aqua 3 2</h6>
+                            <p><i class="fa-solid fa-location-pin"></i> <span>Vinhomes Golden River</span></p>
+                            <p><i class="fa-solid fa-building"></i> <span>Loại BĐS: </span> <span>Căn hộ</span></p>
+                            <p><i class="fa-solid fa-chart-area"></i>
+                                <Span>Diện tích: </Span> <span>100 m2</span></p>
+                        </div>
+                        <div class="wrap_price_item">
+                            <span>7,6 Tỷ</span>
+                            <a href="">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+
+            <div class="footer-logo">
+                <img class="footer-logo-img" src="./img/logo/b974abed8f8d48d3119c.jpg" alt="">
+            </div>
+            <div class="footer-info row no-margin no-padding">
+                <div class="col-lg-4 footer-info-item">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <p>Trụ sở chính</p>
+                    <p>Lot F1-2-3, Thang Long 3 IP. Binh Xuyen, Vinh Phuc Vietnam
+                    </p>
+                </div>
+                <div class="col-lg-4 footer-info-item">
+                    <i class="fa-solid fa-blender-phone"></i>
+                    <p>Hotline</p>
+                    <p>(+84) 868 209 111</p>
+
+                </div>
+                <div class="col-lg-4 footer-info-item">
+                    <i class="fa-solid fa-envelope-open"></i>
+                    <p>Email</p>
+                    <p>hello@cnctech.com.vn</p>
+                </div>
+            </div>
+            <hr style="width:90%; margin: 0 auto;">
+            <div class="bottom-footer row no-margin no-padding">
+                <div class="col-lg-4 col-md-3 col-sm-6 col-12 bottom-footer-item">
+                    <h5>Vị trí văn phòng</h5>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.1201567221838!2d105.65749515017158!3d21.306267985779257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134e590fe630957%3A0xddf65fd7a8dfd81e!2sCNCTECH%20-%20THANG%20LONG%203!5e0!3m2!1svi!2s!4v1665109519921!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-6 col-12 bottom-footer-item">
+                    <h5>Thông tin công ty</h5>
+                    <p><a href="">Trang chủ</a></p>
+                    <p><a href="">Giới thiệu</a></p>
+                    <p><a href="">Các dự án</a></p>
+                    <p><a href="">Tin tức</a></p>
+                    <p><a href="">Liên hệ</a></p>
+
+                </div>
+
+                <div class="col-lg-4 col-md-3 col-sm-6 col-12 bottom-footer-item">
+                    <h5>Lĩnh vực hoạt động</h5>
+                    <p><a href="">Kho bãi</a></p>
+                    <p><a href="">Xưởng</a></p>
+                    <p><a href="">Mặt bằng</a></p>
+                    <p><a href="">Văn phòng</a></p>
+                    <p><a href="">Liên hệ</a></p>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/16daad8c17.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.responsive').slick({
+            dots: true,
+            infinite: true,
+            speed: 700,
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script>
+</body>
+
+</html>
